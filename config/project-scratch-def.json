@@ -1,0 +1,33 @@
+{
+  "orgName": "BotMetrics",
+  "edition": "Enterprise",
+  
+  "features": ["ServiceCloud","Chatbot","Knowledge","LiveAgent","Communities","LightningServiceConsole","LiveMessage","EinsteinAnalyticsPlus","EinsteinBuilderFree","AnalyticsAdminPerms","DevelopmentWave","EinsteinBuilder"],
+  "settings": {
+      "lightningExperienceSettings": {
+          "enableS1DesktopEnabled": true
+      },
+      "mobileSettings": {
+          "enableS1EncryptedStoragePref2": false
+      },
+      "securitySettings": {
+          "enableAuditFieldsInactiveOwner": true
+          
+      },
+      "analyticsSettings": {
+          "enableInsights": true,
+          "enableWaveRecordNavigation": true,
+          "enableWaveReplication": true
+         
+      },
+      "omniChannelSettings": {
+        "enableOmniChannel": true
+      },
+      "liveAgentSettings": {
+        "enableLiveAgent": true
+      },
+      "botSettings" :{
+        "enableBots":true
+      }
+  }
+}

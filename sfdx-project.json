@@ -1,0 +1,18 @@
+{
+    "packageDirectories": [        
+        {
+            "path": "bots-metrics",
+            "default": true,
+            "package": "Einstein Bot Reports",
+            "versionName": "v. 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "definitionFile": "config/project-scratch-def.json"
+        }
+    ],
+    "namespace": "ailabs",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "51.0",
+    "packageAliases": {
+        "Einstein Bot Reports": "0HoB0000000PB6aKAG"
+    }
+}
