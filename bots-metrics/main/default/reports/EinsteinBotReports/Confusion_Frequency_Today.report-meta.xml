@@ -7,15 +7,15 @@
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>ConvDefDialogDailyMetric$Value</column>
+            <column>ConvDefDialogHourlyMetric$Value</column>
         </chartSummaries>
         <chartType>VerticalColumnStacked</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>ConvDefDialogDailyMetric$BotDefinitionName</groupingColumn>
+        <groupingColumn>ConvDefDialogHourlyMetric$BotDefinitionName</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
-        <secondaryGroupingColumn>ConvDefDialogDailyMetric$DialogDefinitionName</secondaryGroupingColumn>
+        <secondaryGroupingColumn>ConvDefDialogHourlyMetric$DialogDefinitionName</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -24,24 +24,23 @@
         <summaryAxisRange>Auto</summaryAxisRange>
         <textColor>#000000</textColor>
         <textSize>12</textSize>
-        <title>Dialogs Opened Last 30 Days</title>
         <titleColor>#000000</titleColor>
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>ConvDefDialogDailyMetric$Id</field>
-    </columns>
-    <columns>
-        <field>ConvDefDialogDailyMetric$MetricType</field>
+        <field>ConvDefDialogHourlyMetric$Id</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>ConvDefDialogDailyMetric$Value</field>
+        <field>ConvDefDialogHourlyMetric$Value</field>
     </columns>
-    <description>Count of dialog usage in a session for last 30 days.</description>
+    <columns>
+        <field>ConvDefDialogHourlyMetric$MetricType</field>
+    </columns>
+    <description>The number of times a bot got confused and the last dialog that the user was on for today.</description>
     <filter>
         <criteriaItems>
-            <column>ConvDefDialogDailyMetric$MetricType</column>
+            <column>ConvDefDialogHourlyMetric$MetricType</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
@@ -51,26 +50,26 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>ConvDefDialogDailyMetric$BotDefinitionName</field>
+        <field>ConvDefDialogHourlyMetric$BotDefinitionName</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>ConvDefDialogDailyMetric$DialogDefinitionName</field>
+        <field>ConvDefDialogHourlyMetric$DialogDefinitionName</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Dialog Frequency Last 30 Days</name>
+    <name>Confusion Frequency Today</name>
     <params>
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>Bot_Metrics_Daily__c</reportType>
+    <reportType>Bot_Metrics_Hourly__c</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>ConvDefDialogDailyMetric$MetricDateTime</dateColumn>
-        <interval>INTERVAL_LAST30</interval>
+        <dateColumn>ConvDefDialogHourlyMetric$MetricDateTime</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
     </timeFrameFilter>
 </Report>

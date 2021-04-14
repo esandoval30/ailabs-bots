@@ -9,13 +9,13 @@
             <axisBinding>y</axisBinding>
             <column>ConvDefDialogDailyMetric$Value</column>
         </chartSummaries>
-        <chartType>VerticalColumnStacked</chartType>
+        <chartType>LineGrouped</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>ConvDefDialogDailyMetric$BotDefinitionName</groupingColumn>
+        <groupingColumn>ConvDefDialogDailyMetric$MetricDateTime</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
-        <secondaryGroupingColumn>ConvDefDialogDailyMetric$DialogDefinitionName</secondaryGroupingColumn>
+        <secondaryGroupingColumn>ConvDefDialogDailyMetric$BotDefinitionName</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -24,7 +24,7 @@
         <summaryAxisRange>Auto</summaryAxisRange>
         <textColor>#000000</textColor>
         <textSize>12</textSize>
-        <title>Dialogs Opened Last 30 Days</title>
+        <title>Bot Sessions by Day</title>
         <titleColor>#000000</titleColor>
         <titleSize>18</titleSize>
     </chart>
@@ -38,28 +38,27 @@
         <aggregateTypes>Sum</aggregateTypes>
         <field>ConvDefDialogDailyMetric$Value</field>
     </columns>
-    <description>Count of dialog usage in a session for last 30 days.</description>
+    <description>All bot sessions by day for last 30 day</description>
     <filter>
         <criteriaItems>
             <column>ConvDefDialogDailyMetric$MetricType</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>2</value>
+            <value>5</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
+    <groupingsDown>
+        <field>ConvDefDialogDailyMetric$MetricDateTime</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>ConvDefDialogDailyMetric$BotDefinitionName</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>ConvDefDialogDailyMetric$DialogDefinitionName</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <name>Dialog Frequency Last 30 Days</name>
+    <name>All Bot Sessions Last 30 Days</name>
     <params>
         <name>co</name>
         <value>1</value>
