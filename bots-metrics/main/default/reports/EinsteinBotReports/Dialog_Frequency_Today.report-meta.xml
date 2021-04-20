@@ -45,7 +45,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>2,9</value>
+            <value>2</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
