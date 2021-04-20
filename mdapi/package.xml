@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <name>ReportType</name>
+    <members>Bot_Metrics_Daily</members>
+    <members>Bot_Metrics_Hourly</members>
+  </types>
+  <types>
+    <name>Report</name>
+    <members>EinsteinBotReports</members>
+    <members>EinsteinBotReports/All_Bot_Sessions_Last_30_Days</members>
+    <members>EinsteinBotReports/Bot_Session_Today</members>
+    <members>EinsteinBotReports/Confusion_Frequency_Last_30_Days</members>
+    <members>EinsteinBotReports/Confusion_Frequency_Today</members>
+    <members>EinsteinBotReports/Dialog_Frequency_Last_30_Days</members>
+    <members>EinsteinBotReports/Dialog_Frequency_Today</members>
+    <members>EinsteinBotReports/Dialogs_with_Exceptions_Last30Days</members>
+    <members>EinsteinBotReports/Dialogs_with_Exceptions_Today</members>
+    <members>EinsteinBotReports/Session_Ended_Last_30_Days</members>
+    <members>EinsteinBotReports/Session_Ended_Today</members>
+  </types>
+  <version>51.0</version>
+  <fullName>EinsteinBotReports</fullName>
+</Package>
